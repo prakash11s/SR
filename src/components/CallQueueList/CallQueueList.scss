@@ -1,0 +1,29 @@
+@import "../../styles/global/variables";
+
+.CallQueueList {
+
+    .CallQueueList-play-btn,
+    .CallQueueList-pause-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .CallQueueList-description {
+        flex-basis: 60%;
+    }
+
+    .CallQueueList-phone {
+        &:hover {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+
+    .active-border {
+        border-left: 5px solid $success;
+    }
+
+    .no-action-border {
+        border-left: 5px solid $danger;
+    }
+}

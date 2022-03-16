@@ -1,0 +1,25 @@
+.pointer { cursor: pointer;}
+
+.rec-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.preferred-dialog .MuiDialog-paper {
+    min-width: 600px;
+    padding: 24px;
+}
+.set-bg-color{
+    background: #8bc34a;
+}
+.set-bg-color td {
+    color: #ffffff;
+}
+@media (max-width: 600px) {
+    .preferred-dialog .MuiDialog-paper {
+        min-width: auto;
+        padding: 24px;
+    }
+}

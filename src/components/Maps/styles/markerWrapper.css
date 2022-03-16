@@ -1,0 +1,66 @@
+.infoBox {
+  width: 350px !important;
+}
+.marker {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.marker .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.markerWrapper {
+  padding: 10px;
+}
+
+.markerWrapper table tr td:first-child {
+  padding-right: 10px;
+}
+
+.markerWrapper p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  padding: 5px 0px 0px;
+}
+
+.markerWrapper .infoBoxLoader {
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+
+.markerWrapper .infoBoxLoader .loader-container {
+  background-color: transparent;
+}
+
+.marker-notes-wrap {
+  display: flex;
+}
+
+.marker-notes {
+  display: flex;
+  padding-left: 10px;
+}
+
+.marker-notes textarea {
+  width: 245px !important;
+  height: 130px !important;
+  resize: none;
+}
+
+.save-notes-btn {
+  float: right;
+  margin: 10px !important;
+}

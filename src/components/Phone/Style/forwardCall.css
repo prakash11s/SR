@@ -1,0 +1,38 @@
+.callButtonContainer {
+    background-color: #36a744;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white
+}
+
+.svg-icons-wrap svg {
+    height: 30px;
+}
+
+.cancelButtonContainer {
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.listStyle {
+    width: 100%;
+    max-width: 200px;
+}
+
+.searchInput {
+    text-align: center;
+    font-weight: 500;
+}
+
+.agentNumbersRow {
+    cursor: pointer;
+}
+
+.agentNumbersRow:hover {
+   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}

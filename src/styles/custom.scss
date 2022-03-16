@@ -1,0 +1,141 @@
+// Atlassian feedback widget
+.atlwdg-trigger {
+  z-index: 999999;
+}
+
+[class*="MuiPopover-root"] {
+  z-index: 10000 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.infinite-loader.MuiCircularProgress-indeterminate {
+  animation: none !important;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+//Active phone page - call record icon
+.recordCall {
+  color: red;
+  cursor: not-allowed !important;
+  opacity: 0.5;
+}
+
+.recordCallContainer:hover {
+  background: #f6f7f9;
+
+  svg {
+    fill: red !important;
+    cursor: not-allowed !important;
+  }
+}
+
+//Common Cursor
+.mousePointer {
+  cursor: pointer;
+}
+
+//Orders Page
+.underlineElement {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.underlineElement:hover {
+  cursor: pointer;
+}
+
+
+.modal-align {
+  margin-top: 160px;
+}
+
+// Numberpad page - Numberpad icon
+
+.marginAuto{
+  margin: auto;
+}
+
+//Couriersstepper-step1
+.margin5{
+  margin: 5px;
+}
+
+.margin20{
+  margin: 20px;
+}
+
+//Role Table row
+.rowHeightt{
+  line-height: 4.5 !important;
+}
+
+//Operating hours table
+.lineHeightZero {
+  line-height:0px !important;
+}
+
+.paddingTen {
+  padding:10px !important;
+}
+
+.max-height-300 {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.p-l-r-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.model-service-head {
+  height: 40px;
+  background: #80808052;
+}
+
+.has-error {
+  border: 1px solid red;
+}
+.alertbox {
+  width: max-content;
+  padding: .75rem 1.25rem;
+  border-radius: 0.125rem;
+  position: relative;
+  z-index: 15;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.alertbox-main {
+  display: flex;
+  justify-content: flex-end;
+}
+.tooltipService {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltipService .tooltiptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltipService:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+      - .:/app
+      - "/app/node_modules"
+    ports:
+      - "9000:3000"
+    tty: true
+    environment:
+      - NODE_ENV=development
+      - COMPOSE_CONVERT_WINDOWS_PATHS=0
+      - CHOKIDAR_USEPOLLING=true
+      - REACT_APP_PROVIDER=https://signin.slim-surface-app.com/oauth
+      - REACT_APP_CLIENT_ID=2
+      - REACT_APP_REDIRECT_URI=http://localhost:9000
+      - REACT_APP_TOKEN_ENDPOINT=https://support-api.slim-surface-app.com/oauth/token
+      - REACT_APP_API_ENDPOINT=https://support-api.slim-surface-app.com
+      - REACT_APP_PARTNER_API_ENDPOINT=https://partners-api.slim-surface-app.com
+      - REACT_APP_VOIP_ENDPOINT=voip.serviceright.nl
+      - REACT_APP_WEBSOCKET_BASE_URL=ws.slim-surface-app.com
+      - REACT_APP_WEBSOCKET_AUTH_ENDPOINT=https://support-api.slim-surface-app.com/oauth/websocket
+      - REACT_APP_VOIP_ENDPOINT_PORT=8089
+      - REACT_APP_GOOGLE_MAP_API=AIzaSyDFxZfZVdr9vwewlqtvdvCdjViAztfNneQ
+      - REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_8jV77zqtdzNY47Wf1DC1Li0Y
+      - REACT_APP_DASHBOARD_PUSHER_KEY=support

@@ -1,0 +1,23 @@
+import React from 'react';
+import {withRouter} from 'react-router-dom';
+import Menu from 'components/TopNav/Menu';
+import { ITopNavProps, ITopNavState } from './Interface/IndexInterface';
+
+class TopNav extends React.Component<ITopNavProps,ITopNavState> {
+
+  render() {
+    return (
+      <div className={`app-top-nav d-none d-md-block ${this.props.styleName}`}>
+        <div className="d-flex app-toolbar align-items-center">
+          <Menu/>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default withRouter(TopNav as any);
+
+(TopNav as any).defaultProps = {
+  styleName: ''
+};
